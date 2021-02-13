@@ -63,3 +63,6 @@ Uma execução do programa proposto deve rodar 300 simulações, imprimindo no c
 + Qual o comportamento que mais vence
 
 ## Como rodar
+rodar python jogar.py
+
+observação: Foram definidos valores aleatórios para os aluguéis e preços de compra
