@@ -15,6 +15,6 @@ class Jogador:
     def mudar_posicao(self, dado, tamanho_tabuleiro):
         for p in range(dado):
             self.posicao += 1
-            if self.posicao == tamanho_tabuleiro:
+            if self.posicao == tamanho_tabuleiro + 1:
                 self.posicao = 0
                 self.saldo += 100
