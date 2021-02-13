@@ -96,3 +96,4 @@ class Tabuleiro:
         propriedades = filter(lambda propriedade: propriedade.proprietario==jogador, self.propriedades)
         for propriedade in propriedades:
             propriedade.proprietario = None
+

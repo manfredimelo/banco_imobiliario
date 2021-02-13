@@ -12,3 +12,4 @@ class JogadorImpulsivo(Jogador):
                 and (self.saldo - propriedade.valor_venda) >= 0:
             return True
         return False
+
