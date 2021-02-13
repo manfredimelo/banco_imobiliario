@@ -54,7 +54,6 @@ class Tabuleiro:
             for jogador in ordem_jogadores:
                 dado = random.randint(1, 6)
                 jogador.mudar_posicao(dado,tamanho_tabuleito)
-                # print(self.propriedades[jogador.posicao]).nome
                 if jogador.posicao > 0:
                     propriedade = self.propriedades[jogador.posicao-1]
                     if propriedade.proprietario and propriedade.proprietario != jogador:
