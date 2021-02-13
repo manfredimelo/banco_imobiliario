@@ -14,8 +14,8 @@ class Tabuleiro:
         self.vencedor = None
         self.propriedades = [
             Propriedade('Praia do Francês', 90, 10),
-            Propriedade('Barra da Tijuca', 160, 40),
-            Propriedade('Praia do Futuro', 140, 30),
+            Propriedade('Barra da Tijuca', 150, 40),
+            Propriedade('Praia do Futuro', 130, 30),
             Propriedade('Parque Ibirapuera', 60, 10),
             Propriedade('Iterlagos', 120, 15),
             Propriedade('Morumbi', 200, 55),
@@ -24,15 +24,15 @@ class Tabuleiro:
             Propriedade('Pajuçara', 115, 20),
             Propriedade('Recreios', 190, 51),
             Propriedade('Santos', 150, 51),
-            Propriedade('Balneário Camburiú', 175, 55),
-            Propriedade('Praia do Francês', 150, 20),
-            Propriedade('Milagres', 120, 51),
-            Propriedade('Maragogi', 70, 20),
+            Propriedade('Balneário Camburiú', 150, 55),
+            Propriedade('Praia do Gunga', 150, 40),
+            Propriedade('Milagres', 180, 51),
+            Propriedade('Maragogi', 70, 30),
             Propriedade('Piedade', 120, 35),
-            Propriedade('Olinda', 140, 40),
+            Propriedade('Olinda', 120, 40),
             Propriedade('Praia da Barra', 210, 60),
             Propriedade('Jatiuca', 150, 55),
-            Propriedade('Barra da Sereia', 40, 5)
+            Propriedade('Praia da Sereia', 40, 15)
         ]
 
         self.jogadores = [
@@ -49,12 +49,12 @@ class Tabuleiro:
         tamanho_tabuleito = len(self.propriedades)
         jogo_em_andamento = True
         rodada = 0
-
         while jogo_em_andamento:
             rodada += 1
             for jogador in ordem_jogadores:
                 dado = random.randint(1, 6)
                 jogador.mudar_posicao(dado,tamanho_tabuleito)
+                # print(self.propriedades[jogador.posicao]).nome
                 if jogador.posicao > 0:
                     propriedade = self.propriedades[jogador.posicao-1]
                     if propriedade.proprietario and propriedade.proprietario != jogador:
