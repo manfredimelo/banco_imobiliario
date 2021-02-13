@@ -10,5 +10,5 @@ class Propriedade:
 
     def verifica_disponibilidade(self):
         if self.proprietario:
-            return True
-        return False
+            return False
+        return True
