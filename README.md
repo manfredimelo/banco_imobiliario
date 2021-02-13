@@ -65,7 +65,7 @@ Uma execução do programa proposto deve rodar 300 simulações, imprimindo no c
 ## Como rodar
 rodar python jogar.py
 
-para testes unitarios rodar python -m unittest
+para testes unitários rodar python -m unittest
 
 
 observação: Foram definidos valores aleatórios para os aluguéis e preços de compra
